@@ -1,15 +1,18 @@
 private double fractionLength = .8; 
 private int smallestBranch = 10; 
 private double branchAngle = .470528199810202015;
+PImage bg;
 
 public void setup() 
 {   
 	size(640,480);    
 	noLoop();
+	bg = loadImage("forest.jpg");
 } 
 public void draw() 
 {   
-	background(0);   
+	image(bg, 0, 0, 640, 480);
+  
 	stroke(0,255,0);   
 	line(320,480,320,380);   
 	//drawBranches(??,??,??,??);  //will add later 
